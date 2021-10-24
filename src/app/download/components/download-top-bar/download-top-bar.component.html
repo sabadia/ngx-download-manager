@@ -1,0 +1,17 @@
+<div class="mat-circle h-60" fxLayout="row" fxLayoutAlign="space-between center">
+  <div style="margin-right: 32px;" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+    <button mat-icon-button [matTooltip]="'Add New'" (click)="openAddUrlModal()"><mat-icon>add_circle_outline</mat-icon></button>
+    <button mat-icon-button [matTooltip]="'Delete Selected'"><mat-icon>highlight_off</mat-icon></button>
+    <button mat-icon-button [matTooltip]="'Start Selected'"><mat-icon>play_circle</mat-icon></button>
+    <button mat-icon-button [matTooltip]="'Pause Selected'"><mat-icon>pause_circlee</mat-icon></button>
+    <button [matTooltip]="'Settings'" color="warn" mat-icon-button><mat-icon>settings</mat-icon></button>
+  </div>
+  <div fxFlex fxLayout="row" class="pl-16 pr-16" style="margin: 0 42px 0 40px" fxLayoutAlign="space-between start">
+    <div class="header-1">File Name</div>
+    <div class="header-1">Size</div>
+    <div class="header-1">Status</div>
+    <div class="header-1">Bandwidth</div>
+    <div class="header-1">Remaining Time</div>
+    <div class="header-1">Last Try</div>
+  </div>
+</div>

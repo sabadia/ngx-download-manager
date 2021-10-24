@@ -1,0 +1,12 @@
+.mat-expansion-panel {
+  color: unset ;
+  background: rgba(236,236,236,0) !important;
+  box-shadow: 0 0 1px 0 rgb(0 0 0 / 10%), 0 10px 20px 0 rgb(0 0 0 / 5%), 0 20px 60px 0 rgb(0 0 0 / 15%), inset 0 0 0 0 rgb(255 255 255 / 75%) !important;
+  border-radius: 10px !important;
+  margin-top: 16px !important;
+}
+.mat-expansion-panel-header {
+  border-radius: 10px !important;
+  padding: 0 0 !important;
+  border: hidden !important;
+}

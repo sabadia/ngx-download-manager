@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "download-manager-aae07": {
+      "hosting": {
+        "download-manager": [
+          "download-manager-aae07"
+        ]
+      }
+    }
+  }
+}

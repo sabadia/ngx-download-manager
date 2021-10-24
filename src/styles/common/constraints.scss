@@ -1,0 +1,101 @@
+.primary-fg{
+  color: #673ab7;
+}
+.primary-bg{
+  background-color: #673ab7;
+}
+.text-center {
+  text-align: center;
+}
+.body-1 {
+  font-weight: 500;
+  font-size: 14px;
+}
+.title-1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.title-2 {
+  font-weight: 900;
+  font-size: 16px;
+  color: rgba(0,0,0,0.6);
+}
+.sub-text-1{
+  font-size: 12px;
+}
+a:link {
+  text-decoration: none;
+}
+
+.mat-box-shaddow-card{
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14) !important;
+}
+.mat-error-message {
+  font-size: 75%;
+  margin-top: .6666666667em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.header-1 {
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(0,0,0, 0.6);
+}
+
+.mat-button-disabled {
+  color: rgba(0,0,0,.3) !important;
+}
+
+.modalBgClass {
+  background-color: transparent;
+}
+
+.cdk-global-scrollblock {
+  overflow-y: hidden !important;
+}
+.mat-select-arrow{
+  color: black;
+}
+.mat-select-panel {
+  background: white;
+}
+.mat-option-text {
+  color: black;
+}
+.mat-option.mat-active {
+  background: rgba(0,0,0,.09) !important;
+}
+.mat-select-value {
+  color: black;
+}
+.mat-option:hover {
+  background: rgba(0,0,0,.09) !important;
+}
+
+//.mat-icon-button {
+//  color: transparent !important;
+//}
+//
+//.mat-icon-button:hover {
+//  color: #F44335 !important;
+//  background: rgba(0,0,0,.09) !important;
+//}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}

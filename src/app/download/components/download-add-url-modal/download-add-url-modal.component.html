@@ -1,0 +1,33 @@
+<div>
+  <form [formGroup]="addUrlForm">
+    <div fxLayout="column" fxLayoutAlign="start start">
+      <mat-form-field appearance="outline" class="w-100-p">
+        <mat-label> Url </mat-label>
+        <input
+          autocomplete="off"
+          matInput
+          formControlName="DownloadUrl"
+          #DownloadUrl
+          placeholder="Url"
+          required
+        />
+      </mat-form-field>
+      <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="16px">
+        <div class="body-1">File Name:</div>
+        <div></div>
+      </div>
+      <mat-form-field appearance="outline" fxFlex="28">
+        <mat-label> Queue </mat-label>
+        <mat-select required formControlName="Queue">
+          <mat-option *ngFor="let queue of queues$ | async" [value]="queue.Id" >{{queue.Name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="end center">
+      <button type="button" [disabled]="loading" mat-button color="accent" (click)="closeModal()">Cancel</button>
+<!--      <mat-spinner color="primary" [diameter]="25" *ngIf="loading"></mat-spinner>-->
+      <button type="button" [disabled]="!file" (click)="downloadLetter()" mat-button color="accent">Add</button>
+      <button type="submit" [disabled]="!file" (click)="downloadNow()" mat-button color="primary">Download</button>
+    </div>
+  </form>
+</div>

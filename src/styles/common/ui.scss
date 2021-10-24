@@ -1,0 +1,26 @@
+.mat-circle {
+  background: rgba(236,236,236,0);
+  box-shadow: 0 0 1px 0 rgb(0 0 0 / 10%), 0 10px 20px 0 rgb(0 0 0 / 5%), 0 20px 60px 0 rgb(0 0 0 / 15%), inset 0 0 0 0 rgb(255 255 255 / 75%);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.mat-dialog-container {
+  background: white;
+  //box-shadow: 0 0 1px 0 rgb(0 0 0 / 10%), 0 10px 20px 0 rgb(0 0 0 / 5%), 0 20px 60px 0 rgb(0 0 0 / 15%), inset 0 0 0 0 rgb(255 255 255 / 75%);
+  border-radius: 10px !important;
+  padding: 16px !important;
+  color: black !important;
+}
+
+.mat-form-field-label {
+  color: black;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: black;
+}
+/* Font color */
+input.mat-input-element {
+  color: black;
+}

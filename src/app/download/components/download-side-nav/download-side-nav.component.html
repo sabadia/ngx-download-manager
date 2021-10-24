@@ -1,0 +1,30 @@
+<div class="w-280 h-100-p">
+  <div class="w-100-p" *ngFor="let navigation of defaultNavigationList">
+    <button [routerLink]="[navigation.Id]" [routerLinkActive]="['active']" style="text-align: start" class="h-50 w-100-p" mat-button>
+      <mat-icon matPrefix>{{navigation.IconName}}</mat-icon>
+      <span class="ml-16">{{navigation.Name}}</span>
+    </button>
+  </div>
+  <div class="ml-16 mr-16 mt-24" style="border-top: 1px solid rgba(0,0,0,.1)"></div>
+  <div class="mt-8 w-100-p" style="height: calc(100% - 350px)" >
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="w-100-p mb-12">
+      <div class="title-2 ml-16">Queues</div>
+      <button (click)="openAddQueueModal()" [matTooltip]="'Add Queue'" mat-icon-button class="mr-10"><mat-icon>add_circle_outline</mat-icon></button>
+    </div>
+    <div style="overflow: auto; height: calc(100% - 52px)">
+      <div class="w-100-p" *ngFor="let queue of queues$ | async">
+        <button  mat-button  [routerLink]="[queue.Id]" [routerLinkActive]="['active']" style="text-align: start" class="h-50 w-100-p">
+          <div fxLayout="row" fxLayoutAlign="space-between stretch">
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+              <mat-icon matPrefix>queue</mat-icon>
+              <span>{{queue.Name}}</span>
+            </div>
+            <button matSuffix (click)="openAddQueueModal(queue)" mat-icon-button>
+              <mat-icon>edit</mat-icon>
+            </button>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
